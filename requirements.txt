@@ -1,0 +1,9 @@
+streamlit
+pandas
+openai
+anthropic
+PyMuPDF  # This installs `fitz`
+tiktoken
+matplotlib
+pillow  # For PIL
+pymupdf4llm
