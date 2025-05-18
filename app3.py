@@ -468,8 +468,7 @@ def main_app():
         task_4()
     elif task == "Task 5":
         task_5()
-    elif task == "Task 6":
-        task_6()
+   
 
 # --- Placeholder task pages ---
 import matplotlib.pyplot as plt
