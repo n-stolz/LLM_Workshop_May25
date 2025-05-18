@@ -1170,7 +1170,7 @@ def task_5():
     # Display relevant images
     st.subheader("🖼️ Relevant Extracted Images")
     for img in images:
-        st.image(base64_to_image(img["image_base64"]), caption=img["filename"], use_column_width=True)
+        st.image(base64_to_image(img["image_base64"]), caption=img["filename"], use_container_width=True)
 
     # User prompt input
     #st.subheader("✍️ Prompt")
