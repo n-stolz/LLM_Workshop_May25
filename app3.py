@@ -453,7 +453,7 @@ def load_resources():
 # --- Main multi-task app ---
 def main_app():
     st.sidebar.title("🧪 Workshop Tasks")
-    task = st.sidebar.radio("Select Task", [f"Task {i}" for i in range(1, 7)])
+    task = st.sidebar.radio("Select Task", [f"Task {i}" for i in range(1, 6)])
 
     if "project_dict" not in st.session_state:
         load_resources()
