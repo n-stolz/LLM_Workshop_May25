@@ -1254,9 +1254,6 @@ def run_multimodal_gpt(project_id, user_prompt, images, project_text):
     except Exception as e:
         return str(e)
 
-def task_6():
-    st.header("🧩 Task 6")
-    st.write("Implement logic for Task 6 here.")
 
 # --- Entry point ---
 if __name__ == "__main__":
