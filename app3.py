@@ -43,10 +43,16 @@ def load_resources():
     openai.api_key = st.session_state["openai_key"]
     anthropic.api_key = st.session_state["anthropic_key"]
 
-    with st.spinner("🔍 Loading reports, this may take up to 1-2 minutes..."):
-        VCS2410 = pymupdf4llm.to_markdown("reports/VCS2410.pdf")
-        VCS2834 = pymupdf4llm.to_markdown("reports/VCS2834.pdf")
-        GCSP1025 = pymupdf4llm.to_markdown("reports/GCSP1025.pdf")
+    with st.spinner("🔍 Loading reports"):
+     # Read the pre-loaded files (already converted to markdown so save some time during workshop - ~30sec-1min per pdf)
+        with open("reports/VCS2410.md", "r", encoding="utf-8") as f:
+            VCS2410 = f.read()
+
+        with open("reports/VCS2834.md", "r", encoding="utf-8") as f:
+            VCS2834 = f.read()
+
+        with open("reports/GCSP1025.md", "r", encoding="utf-8") as f:
+            GCSP1025 = f.read()
         st.session_state["project_dict"] = {
             'VCS2410': VCS2410, 
             'VCS2834': VCS2834,
@@ -958,7 +964,7 @@ def get_model_response(user_prompt, project_description, temperature_value):
 
     category_description =st.session_state['category_description']
     # Combine system prompt, category description, and user prompt
-    full_prompt = system_prompt + category_description + f"\nThe carbon project description starts here: \n {project_description[0:200000]}\n{user_prompt}"
+    full_prompt = user_prompt + "\n" + category_description + f"\nThe carbon project description starts here: \n {project_description[0:100000]}\n"
 
     messages = [
         {"role": "system", "content": system_prompt},
@@ -1063,7 +1069,7 @@ def task_4():
     output_structure = st.session_state['output_structure']
 
     # Combine everything into the full prompt
-    full_prompt = user_prompt + st.session_state['category_description'] + f" The carbon project description starts here: \n {project_description[0:200000]}" + output_structure
+    full_prompt = user_prompt + st.session_state['category_description'] + f" The carbon project description starts here: \n {project_description[0:100000]}" + output_structure
 
     # Button to generate response
     if st.button("Generate Response"):

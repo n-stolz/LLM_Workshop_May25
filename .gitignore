@@ -157,3 +157,7 @@ Thumbs.db
 
 #Keys
 key_file.env
+
+#Slides
+presentation/
+
