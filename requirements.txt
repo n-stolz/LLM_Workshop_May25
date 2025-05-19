@@ -7,3 +7,5 @@ tiktoken
 matplotlib
 pillow  # For PIL
 pymupdf4llm
+python-dotenv
+
