@@ -3,11 +3,9 @@
 Welcome to the workshop on how to use Large Language Models (LLM) in research.
 
 Here is an overview of files in the repository:
-
     - llm_workshop_python.ipynb : this is the notebook you will be working with
     - reports: directory where documents we are analysing are saved. You can open them, but please don't rename them
     - app3.py: This is the code for the web interface - no need to open or change it
-
 
 
 To get started:\n
