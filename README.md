@@ -11,12 +11,14 @@ Here is an overview of files in the repository:
 
 
 To get started:\n
-1. Clone this repository on your computer
+1. Clone this repository on your computer: 
+
+   git clone https://github.com/n-stolz/LLM_Workshop_May25.git
 
 2. Create a virtual environment
 
     For windows:
-    pythWn -m venv venv
+    python -m venv venv
     venv\Scripts\activate
 
     For Mac:
