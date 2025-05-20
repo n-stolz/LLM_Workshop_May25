@@ -25,7 +25,7 @@ if 'logged_in' not in st.session_state:
 
 # --- Login page ---
 def login_page():
-    st.title("🔐 Research Assistant Workshop Login")
+    st.title("🔐 Quarterly LLM Workshop Login")
 
     password_input = st.text_input("Enter workshop password", type="password")
     if st.button("Login"):
