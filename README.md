@@ -40,3 +40,5 @@ cd LLM_Workshop_May25
     ```
 
 4. You should have gotten the file "key_file.env" in a separate email from the workshop administrator. Copy it to the git folder. Do not change the name of this file - it is in the .gitignore file, so it will not be commited to github.
+
+5. Make sure you can run the first two cells that contains the imports prior to the workshop to test that the environment works. The second cell should give the output "The openai key is: 'xxxx'", where 'xxxx' must be not empty. If the key is empty, make sure you executed step 4 correctly.
