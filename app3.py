@@ -1039,7 +1039,7 @@ def task_4():
     
     # Show the expected output format as guidance
     st.subheader("Expected Output Format")
-    st.markdown("We add this output structure to the prompt. The model will fit the desired output structure:")
+    st.markdown("We add this output structure to the prompt (in backend this is added to end of prompt). The model will fit the desired output structure:")
 
     st.code("""
     {
