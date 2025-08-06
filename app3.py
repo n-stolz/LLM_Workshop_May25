@@ -523,6 +523,8 @@ def task_1():
         "gpt 4.1-mini": {"input": 0.4, "output": 1.6},
         "claude-3-opus": {"input": 15.0, "output": 75.0},
         "claude-3-sonnet": {"input": 3.0, "output": 15.0},
+        "DeepSeek-V3": {"input": 0.07, "output": 1.1},
+        "DepSeek-R1": {"input": 0.14, "output": 2.19}
     }
 
     expected_output_tokens = st.slider("Expected output tokens", 100, 10000, 800, step=100)
@@ -904,7 +906,7 @@ Headquarter of the actor. This can be a city, country, or region.
     # User prompt input (extraction prompt for companies)
     st.subheader("User Prompt (Tell the model what to do)")
     user_prompt = st.text_area(
-        "Write a prompt to instruct the model to extract relevant structured information (e.g., companies involved in the project).",
+        "Write a prompt to instruct the model to extract relevant structured information (e.g., companies involved in the project). Note: The codebook above will be automatically appended to your user prompt.",
         value="TODO: write your instruction here."
     )
 
