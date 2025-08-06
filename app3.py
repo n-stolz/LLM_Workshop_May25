@@ -557,6 +557,7 @@ def task_1():
     ax.set_xlabel("Model")
     ax.set_ylim(0, max(cost_values) * 1.3)
     ax.grid(axis='y', linestyle='--', alpha=0.7)
+    ax.tick_params(axis='x', labelrotation=90)
 
     for bar, cost in zip(bars, cost_values):
         yval = bar.get_height()
