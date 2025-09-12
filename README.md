@@ -4,9 +4,9 @@ Welcome to the workshop on how to use Large Language Models (LLM) in research.
 
 Here is an overview of the files in the repository:
 
-- **`llm_workshop_python.ipynb`**: This is the notebook you will be working with.
+- **`llm_workshop_oeko.ipynb`**: This is the notebook you will be working with.
 - **`reports/`**: Directory where the documents we are analyzing are saved. You can open them, but **please don't rename them**.
-- **`app3.py`**: This is the code for the web interface — no need to open or change it.
+- **`streamlit_oeko.py`**: This is the code for the web interface — no need to open or change it.
 
 
 To get started:\n
@@ -17,9 +17,12 @@ To get started:\n
 git clone https://github.com/n-stolz/LLM_Workshop_May25.git
 cd LLM_Workshop_May25
 ```
+2. Open terminal and go to the correct branch
+    ```bash
+    git checkout OEKO_institut
+    ```
 
-
-2. Create a virtual environment
+3. Create a virtual environment
 
     For windows:
     ```bash
@@ -34,11 +37,11 @@ cd LLM_Workshop_May25
     source venv/bin/activate
     ```
 
-3. Then install dependencies:
+4. Then install dependencies:
     ```bash
     pip install -r requirements.txt
     ```
 
-4. You should have gotten the file "key_file.env" in a separate email from the workshop administrator. Copy it to the git folder. Do not change the name of this file - it is in the .gitignore file, so it will not be commited to github.
+5. You should have gotten the file "key_file.env" in a separate email from the workshop administrator. Copy it to the git folder. Do not change the name of this file - it is in the .gitignore file, so it will not be commited to github.
 
-5. Make sure you can run the first two cells that contains the imports prior to the workshop to test that the environment works. The second cell should give the output "The openai key is: 'xxxx'", where 'xxxx' must be not empty. If the key is empty, make sure you executed step 4 correctly.
+6. Make sure you can run the first two cells that contains the imports prior to the workshop to test that the environment works. The second cell should give the output "The openai key is: 'xxxx'", where 'xxxx' must be not empty. If the key is empty, make sure you executed step 4 correctly.
