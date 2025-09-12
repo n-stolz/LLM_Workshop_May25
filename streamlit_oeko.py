@@ -555,6 +555,7 @@ def task_1():
     **Never** upload your key anywhere (e.g. GitHub, paper submission...). If it gets exposed, people can use credit from your account!
 
     **Length of Documents (PDFs include images, tables, etc.):**
+                
         - GS12533: 140 pages
         - GS12570: 100 pages
         - GS12817: 90 pages
@@ -755,7 +756,7 @@ def task_3():
     with st.expander("Click to see Information to be extracted"):
         st.markdown("""
         **Information to be extracted from the PDD**:
-        1. Methods of emission reduction according to the Methodology. Methods of emission reduction:
+        1. Methods of emission reduction according to the Methodology.\n There are three methods for emission reduction:
 
             - Methods 1: Baseline and project fuel(s) are identical and emission reductions are exclusively from improved efficiency
             - Method 2: Baseline and project fuel(s) are identical, emission reductions are exclusively from improved efficiency, and the default baseline fuel consumption is applied
